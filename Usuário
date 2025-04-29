@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO Usuario (idUsuario, nome, email, senha, data_nascimento, genero, peso_atual, altura)
+VALUES (1, 'João Silva', 'joao@email.com', 'senha123', '1990-05-15', 'Masculino', 75.5, 1.75);
+
+-- READ
+SELECT * FROM Usuario WHERE idUsuario = 1;
+
+-- UPDATE
+UPDATE Usuario 
+SET nome = 'João Silva Santos', peso_atual = 74.8 
+WHERE idUsuario = 1;
+
+-- DELETE
+DELETE FROM Usuario WHERE idUsuario = 1;
