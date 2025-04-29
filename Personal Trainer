@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO PersonalTrainer (id_trainer, nome, especialidade, contato)
+VALUES (1, 'Carlos Magno', 'Treino funcional', 'carlos@academia.com');
+
+-- READ
+SELECT * FROM PersonalTrainer WHERE id_trainer = 1;
+
+-- UPDATE
+UPDATE PersonalTrainer 
+SET especialidade = 'Treino funcional e musculação' 
+WHERE id_trainer = 1;
+
+-- DELETE
+DELETE FROM PersonalTrainer WHERE id_trainer = 1;
