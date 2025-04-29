@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO Notificacao (id_notificacao, mensagem, data_envio, status)
+VALUES (1, 'Seu treino de hoje está agendado para 18h', '2025-04-15', 'Não lida');
+
+-- READ
+SELECT * FROM Notificacao WHERE id_notificacao = 1;
+
+-- UPDATE
+UPDATE Notificacao 
+SET status = 'Lida' 
+WHERE id_notificacao = 1;
+
+-- DELETE
+DELETE FROM Notificacao WHERE id_notificacao = 1;
