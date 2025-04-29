@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO Mensagem (id_mensagem, id_remetente, id_destinatario, conteudo)
+VALUES (1, 1, 2, 'Olá, como posso te ajudar com seu treino hoje?');
+
+-- READ
+SELECT * FROM Mensagem WHERE id_mensagem = 1;
+
+-- UPDATE
+UPDATE Mensagem 
+SET conteudo = 'Olá, como posso te ajudar com seu plano de treino hoje?' 
+WHERE id_mensagem = 1;
+
+-- DELETE
+DELETE FROM Mensagem WHERE id_mensagem = 1;
