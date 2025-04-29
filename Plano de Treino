@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO PlanoDeTreino (idPlano, nome, objetivo, dataInicio, dataFim, status)
+VALUES (1, 'Treino para perda de peso', 'Queimar calorias e definir músculos', '2025-04-01', '2025-07-01', 'Ativo');
+
+-- READ
+SELECT * FROM PlanoDeTreino WHERE idPlano = 1;
+
+-- UPDATE
+UPDATE PlanoDeTreino 
+SET status = 'Concluído' 
+WHERE idPlano = 1;
+
+-- DELETE
+DELETE FROM PlanoDeTreino WHERE idPlano = 1;
