@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO AtividadeFisica (id_atividade, tipo, data, duracao, distancia, calorias_gastas)
+VALUES (1, 'Corrida', '2025-04-15', 45.5, 8.2, 450.0);
+
+-- READ
+SELECT * FROM AtividadeFisica WHERE id_atividade = 1;
+
+-- UPDATE
+UPDATE AtividadeFisica 
+SET calorias_gastas = 480.0 
+WHERE id_atividade = 1;
+
+-- DELETE
+DELETE FROM AtividadeFisica WHERE id_atividade = 1;
