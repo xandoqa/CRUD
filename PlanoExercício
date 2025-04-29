@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO PlanoExercicio (idPlanoExercicio, idPlano, idExercicio, repeticoes, series)
+VALUES (1, 1, 1, 12, 3);
+
+-- READ
+SELECT * FROM PlanoExercicio WHERE idPlanoExercicio = 1;
+
+-- UPDATE
+UPDATE PlanoExercicio 
+SET repeticoes = 15, series = 4 
+WHERE idPlanoExercicio = 1;
+
+-- DELETE
+DELETE FROM PlanoExercicio WHERE idPlanoExercicio = 1;
