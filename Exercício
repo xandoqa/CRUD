@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO Exercicio (idExercicio, nome, tipo, duracaoEstimativa)
+VALUES (1, 'Agachamento', 'Força', 30);
+
+-- READ
+SELECT * FROM Exercicio WHERE idExercicio = 1;
+
+-- UPDATE
+UPDATE Exercicio 
+SET duracaoEstimativa = 35 
+WHERE idExercicio = 1;
+
+-- DELETE
+DELETE FROM Exercicio WHERE idExercicio = 1;
