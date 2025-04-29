@@ -1,0 +1,14 @@
+-- CREATE
+INSERT INTO Meta (idMeta, idUsuario, descricao, tipoMeta, valorObjetivo, dataLimite, status)
+VALUES (1, 1, 'Perder 5kg em 3 meses', 'Perda de peso', 5.0, '2025-07-30', 'Em andamento');
+
+-- READ
+SELECT * FROM Meta WHERE idMeta = 1;
+
+-- UPDATE
+UPDATE Meta 
+SET progressoAtual = '3.2kg', status = 'Em andamento' 
+WHERE idMeta = 1;
+
+-- DELETE
+DELETE FROM Meta WHERE idMeta = 1;
